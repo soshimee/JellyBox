@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JellyBox</title>
+		<meta name="description" content="Jelly!">
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<div class="options">
+			Options
+			<br>
+			Gravity: <input type="number" class="gravity_x">, <input type="number" class="gravity_y">
+			<br>
+			Boundary friction: <input type="number" class="boundary_friction">
+			<br>
+			Collision damping: <input type="number" class="collision_damping">
+			<br>
+			Collision force: <input type="number" class="collision_force">
+			<br>
+			Mouse pull: <input type="number" class="mouse_pull">
+			<br>
+			Damp: <input type="number" class="damp">
+			<br>
+			Stiff: <input type="number" class="stiff">
+			<br>
+			Mass: <input type="number" class="mass">
+			<br>
+			Count: <input type="number" class="count">
+			<br>
+			Size: <input type="number" class="size">
+			<br>
+			Resolution: <input type="number" class="resolution">
+			<br>
+			<button class="reset">Reset</button>
+			<button class="apply">Apply</button>
+		</div>
+		<div class="info">
+			<p>Click to attract Jellies!</p>
+			<p>Warning: Untested on mobile devices.</p>
+		</div>
+		<div class="fullscreen">
+			<svg width="50" height="50">
+				<rect x="5" y="5" width="5" height="10" style="fill:black" />
+				<rect x="5" y="5" width="10" height="5" style="fill:black" />
+				<rect x="40" y="5" width="5" height="10" style="fill:black" />
+				<rect x="35" y="5" width="10" height="5" style="fill:black" />
+				<rect x="5" y="35" width="5" height="10" style="fill:black" />
+				<rect x="5" y="40" width="10" height="5" style="fill:black" />
+				<rect x="40" y="35" width="5" height="10" style="fill:black" />
+				<rect x="35" y="40" width="10" height="5" style="fill:black" />
+			</svg>
+		</div>
+		<script src="js/lib/p5.min.js"></script>
+		<script src="js/lib/softbody.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
