@@ -165,8 +165,5 @@ document.querySelector(".apply").onclick = () => {
 }
 
 document.querySelector(".reset").onclick = () => {
-	url.searchParams.forEach((_value, key) => {
-		url.searchParams.delete(key);
-	})
-	location.replace(url.toString());
+	location.search = "";
 }
